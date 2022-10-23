@@ -22,10 +22,9 @@ acc = client["ACC"]
 db = client["bot"]
 userdb = db["user"]
 
-app.start()
 app = Client("giveaway",api_id=API_ID,api_hash=API_HASH,bot_token=BOT_TOKEN,)
 
-
+app.start()
 
 x = app.get_me()
 BOT_USERNAME = x.username
