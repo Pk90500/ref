@@ -480,6 +480,3 @@ async def broadcast_message(_, message):
         except Exception:
             pass
     await m.edit(f"**Broadcasted Message In {sent} Chats.**")
-
-
-app.run()
