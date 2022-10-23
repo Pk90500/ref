@@ -156,8 +156,7 @@ async def refferal(_, message: Message):
     await app.send_sticker(name,random.choice(STICKER),reply_markup=keyboard)
     try:
        await message._client.get_chat_member(int(CHANNEL_ID), message.from_user.id)
-       link = await app.create_chat_invite_link(chat_id=(int(CHANNEL_ID) if CHANNEL_ID.startswith("-100") else CHANNEL_ID))
-   
+       link = await app.create_chat_invite_link(chat_id=(int(CHANNEL_ID) if CHANNEL_ID.startswith("-100") else CHANNEL_ID))   
     except UserNotParticipant:
        await app.send_message(
 			chat_id=message.from_user.id,
@@ -168,7 +167,7 @@ async def refferal(_, message: Message):
      reply_markup=InlineKeyboardMarkup(
              [
                  [
-                    InlineKeyboardButton("🚀 Join Now  ", url=f"{link}"),
+                    InlineKeyboardButton("🚀 Join Now", url=f"{link}"),
                  ],
              ]
             ))
