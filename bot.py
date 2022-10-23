@@ -24,9 +24,7 @@ userdb = db["user"]
 
 app = Client("giveaway",api_id=API_ID,api_hash=API_HASH,bot_token=BOT_TOKEN,)
 
-app.start()
 
-x = app.get_me()
 BOT_USERNAME = x.username
 ADMIN = BOT_OWNER
 
@@ -482,3 +480,4 @@ async def broadcast_message(_, message):
             pass
     await m.edit(f"**Broadcasted Message In {sent} Chats.**")
 
+app.run()
