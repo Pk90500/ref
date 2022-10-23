@@ -22,6 +22,7 @@ acc = client["ACC"]
 db = client["bot"]
 userdb = db["user"]
 
+app.start()
 app = Client("giveaway",api_id=API_ID,api_hash=API_HASH,bot_token=BOT_TOKEN,)
 
 
@@ -482,4 +483,3 @@ async def broadcast_message(_, message):
             pass
     await m.edit(f"**Broadcasted Message In {sent} Chats.**")
 
-app.run()
