@@ -25,7 +25,7 @@ userdb = db["user"]
 app = Client("giveaway",api_id=API_ID,api_hash=API_HASH,bot_token=BOT_TOKEN,)
 
 
-BOT_USERNAME = x.username
+BOT_USERNAME = ShekharRoBot
 ADMIN = BOT_OWNER
 
 
