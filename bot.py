@@ -167,7 +167,7 @@ async def refferal(_, message: Message):
      reply_markup=InlineKeyboardMarkup(
              [
                  [
-                    InlineKeyboardButton("🚀 Join Now", url=f"{link}"),
+                    InlineKeyboardButton("🚀Join Now", f"{link}"),
                  ],
              ]
             ))
