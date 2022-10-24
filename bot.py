@@ -164,13 +164,15 @@ async def refferal(_, message: Message):
 ⚠️ **Access Denied** {message.from_user.mention}
 ❗️ You Must Join This Channel First !
 """,
-     reply_markup=InlineKeyboardMarkup(
-             [
-                 [
-                    InlineKeyboardButton("🚀Join Now", f"{link}"),
-                 ],
-             ]
-            ))
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "⚡𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=f"{link}")
+                ]
+            ]
+        )
+    ),
        return
     url = f"https://t.me/{BOT_USERNAME}?start={name}"
     await app.send_photo(name,
