@@ -158,6 +158,7 @@ async def refferal(_, message: Message):
        await message._client.get_chat_member(int(CHANNEL_ID), message.from_user.id)
        link = await app.create_chat_invite_link(chat_id=(int(CHANNEL_ID) if CHANNEL_ID.startswith("-100") else CHANNEL_ID))   
     except UserNotParticipant:
+       sex = await app.create_chat_invite_link(chat_id=(int(CHANNEL_ID) if CHANNEL_ID.startswith("-100") else CHANNEL_ID))   
        await app.send_message(
 			chat_id=message.from_user.id,
 			text=f"""
@@ -168,7 +169,7 @@ async def refferal(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "⚡𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=f"{link}")
+                        "⚡𝗖𝗛𝗔𝗡𝗡𝗘𝗟", url=f"{sex}")
                 ]
             ]
         )
