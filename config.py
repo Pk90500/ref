@@ -4,7 +4,7 @@ from pyrogram.types import ReplyKeyboardMarkup,InlineKeyboardMarkup, InlineKeybo
 
 load_dotenv("config.env")
 
-BOT_OWNER = 1467358214
+BOT_OWNER = int(1890117013)
 BOT_TOKEN = environ.get("BOT_TOKEN", None)
 API_ID = int(environ.get("API_ID", 6))
 API_HASH = environ.get("API_HASH", "eb06d4abfb49dc3eeb1aeb98ae0f581e")
@@ -62,9 +62,7 @@ HELP_TEXT =f"""
 
 START_TEXT = """
 📚<u> I am bot that can provide **Premium Accounts**
-Share me and get account as you want...</u>
-
-For more open Giveaway join with [Mafia](https://t.me/MafiaGiveaways) & join with [sz team](https://t.me/szteambots) for BOT updates."""
+Share me and get account as you want...</u>"""
 
 REF = """
 Send the banner above to your friends or contacts and for every new member that joins bot by you, you will gain 1 $!
@@ -101,9 +99,9 @@ comman =InlineKeyboardMarkup(
 					[
                     [
 							InlineKeyboardButton(
-								"👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", user_id=1467358214),
+								"👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ", user_id=BOT_OWNER),
 							InlineKeyboardButton(
-								"💠 Github", url="https://github.com/szsupunma")
+								"💠 Github", url="https://telegra.ph/file/9b0455dae14d5639f936d.mp4")
 					],
                     [
 							InlineKeyboardButton(
